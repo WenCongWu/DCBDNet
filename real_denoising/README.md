@@ -1,39 +1,41 @@
+### 1 dataset download
 
-## Training
-- Download the [SIDD](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php) and [RENOIR](https://ani.stat.fsu.edu/~abarbu/Renoir.html)
+Download the [SIDD](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php), [RENOIR](https://ani.stat.fsu.edu/~abarbu/Renoir.html), and put these datasets into ./Datasets/ directory.
+
+### 2 train
 
 - Generate image patches from high-resolution training images of SIDD and RENOIR datasets
 ```
 first: 
 python generate_patches_SIDD.py --ps 180 --num_patches 200 --num_cores 16
+
 second:
 python generate_patches_RENOIR.py --ps 180 --num_patches 200 --num_cores 16
 ```
-- Train the model with default arguments by running
+
+- train the model with default arguments by running
 
 ```
 python train.py
 ```
 
+### 3 test
 
-## Evaluation
+- download the [DND](https://noise.visinf.tu-darmstadt.de/), and put these datasets into ./Datasets/ directory.
 
-- Download the [model](https://drive.google.com/file/d/1LODPt9kYmxwU98g96UrRA0_Eh5HYcsRw/view?usp=sharing) and place it in `./pretrained_models/`
+### testing on SIDD dataset
 
-#### Testing on SIDD dataset
-- Download SIDD Validation Data and Ground Truth from [here](https://www.eecs.yorku.ca/~kamel/sidd/benchmark.php) and place them in `./Datasets/SIDD/test/`
-- Run
 ```
-python test_SIDD.py --save_images
-```
-#### Testing on DND dataset
-- Download DND Benchmark Data from [here](https://noise.visinf.tu-darmstadt.de/downloads/) and place it in `./Datasets/DND/test/`
-- Run
-```
-python test_DND.py --save_images
+python test_SIDD.py
 ```
 
-#### To reproduce PSNR/SSIM scores of the paper, run MATLAB script
+### testing on DND dataset
+
+```
+python test_DND.py
+```
+
+### in order to get the PSNR and SSIM values of the denoised SIDD test set, run MATLAB script
 ```
 evaluate_SIDD.m
 ```
