@@ -1,10 +1,13 @@
 
 ## Training
-- Download the [Datasets](Datasets/README.md)
+- Download the [SIDD](https://www.eecs.yorku.ca/~kamel/sidd/dataset.php) and [RENOIR](https://ani.stat.fsu.edu/~abarbu/Renoir.html)
 
-- Generate image patches from full-resolution training images of SIDD dataset
+- Generate image patches from high-resolution training images of SIDD and RENOIR datasets
 ```
-python generate_patches_SIDD.py --ps 256 --num_patches 300 --num_cores 10
+first: 
+python generate_patches_SIDD.py --ps 180 --num_patches 200 --num_cores 16
+second:
+python generate_patches_RENOIR.py --ps 180 --num_patches 200 --num_cores 16
 ```
 - Train the model with default arguments by running
 
