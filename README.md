@@ -7,6 +7,19 @@ This is a PyTorch implementation for DCBDNet image denoising. Paper download: [D
 * [torchvision](https://github.com/pytorch/vision)
 * [OpenCV](https://pypi.org/project/opencv-python/)
 
-### 2. Other Important Notes
-
-Some codes are from [KAIR](https://github.com/cszn/KAIR) and [MPRNet](https://github.com/swz30/MPRNet)
+### 2. Citation
+If you find DCBDNet helpful for your research, please consider citing our work.
+```BibTex
+@article{WuL2023,
+  author       = {Wencong Wu and
+                  Shicheng Liao and
+                  Guannan Lv and
+                  Peng Liang and
+                  Yungang Zhang},
+  title        = {Image Blind Denoising Using Dual Convolutional Neural Network with
+                  Skip Connection},
+  journal      = {CoRR},
+  volume       = {abs/2304.01620},
+  year         = {2023}
+}
+```
