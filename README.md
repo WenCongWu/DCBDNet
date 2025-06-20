@@ -1,6 +1,6 @@
 ### DCBDNet-PyTorch
 
-This is a PyTorch implementation for DCBDNet image denoising. Paper download: [DCBDNet]([https://arxiv.org/abs/2304.01620](https://www.sciencedirect.com/science/article/pii/S0923596525001110])
+This is a PyTorch implementation for DCBDNet image denoising. Paper download: [DCBDNet]([https://www.sciencedirect.com/science/article/pii/S0923596525001110])
 
 ### 1. Dependences
 * [PyTorch](http://pytorch.org/)
