@@ -18,8 +18,9 @@ If you find DCBDNet helpful for your research, please consider citing our work.
                   Yungang Zhang},
   title        = {Image Blind Denoising Using Dual Convolutional Neural Network with
                   Skip Connection},
-  journal      = {CoRR},
-  volume       = {abs/2304.01620},
-  year         = {2023}
+  journal      = {Signal Processing: Image Communication},
+  volume       = {138},
+  pages        = {117365},
+  year         = {2025}
 }
 ```
